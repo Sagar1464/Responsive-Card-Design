@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card Design </title>
+    <style>
+        .flex-container{
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .flex-container > div{
+            background-color: white;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            box-shadow: 5px 5px 40px gray;
+            border-radius: 20px;
+          
+        }
+
+        .flex-container > div:hover{
+            transform: translate(0px, -10px);
+            transition: .3s;       
+        }
+
+        .btn{
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            padding: 3px 15px 3px ;
+            border-radius: 10px;
+            box-shadow: 6px 4px 30px rgb(237, 198, 198);
+            text-shadow: 10px 5px 5px yellow;
+        }
+
+        .btn:hover{
+            background-color: rgb(74, 109, 20);
+            transition: .4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div><a href="#" class="btn">Card</a></div>
+        <div><a href="#" class="btn">Card</a></div>
+        <div><a href="#" class="btn">Card</a></div>
+        <div><a href="#" class="btn">Card</a></div>
+        <div><a href="#" class="btn">Card</a></div>
+        <div><a href="#" class="btn">Card</a></div>
+    </div>
+</body>
+</html>
